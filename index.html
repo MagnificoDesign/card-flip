@@ -22,7 +22,7 @@ section{display:none;margin-top:16px}section.on{display:block}h2{font-size:16px;
 .bar{position:relative;height:8px;background:var(--line);border-radius:4px;margin:10px 0 4px}.fill{position:absolute;inset:0 auto 0 0;background:var(--acc);border-radius:4px}
 .tick{position:absolute;top:-3px;width:2px;height:14px;background:var(--tx)}
 table{width:100%;border-collapse:collapse;font-size:13px}td,th{padding:8px 4px;border-bottom:1px solid var(--line);text-align:right}td:first-child,th:first-child{text-align:left}th{color:var(--mut);font-weight:500}
-.note{color:var(--mut);font-size:12px;margin-top:8px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}.chips button{background:var(--card);border:1px solid var(--line);color:var(--mut);border-radius:99px;padding:6px 12px;font:600 12px system-ui}.chips button.on{color:var(--tx);border-color:var(--acc)}.nf{opacity:.6}.note{color:var(--mut);font-size:12px;margin-top:8px}
 </style></head><body>
 <h1>Card Flip</h1><div class="sub" id="upd"></div>
 <div class="grid" id="sum"></div>
@@ -37,12 +37,13 @@ const k=(l,v,c="",b="")=>`<div class="k ${b}"><span>${l}</span><b class="${c}">$
 $("#sum").innerHTML=k("Equity (net if sold)",usd(s.total_equity_net),"","big")+k("Cash",usd(s.cash))+k("Invested",usd(s.invested_cost))+k("Realized P&L",usd(s.realized_pnl),cls(s.realized_pnl))+k("Unrealized P&L",usd(s.unrealized_pnl_net),cls(s.unrealized_pnl_net))+k("Win rate",s.win_rate_pct==null?"—":s.win_rate_pct+"%")+k("Open",s.open_positions);
 const secs=[];
 if(d.positions.length)secs.push(["Positions",d.positions.map(p=>{const sp=p.target_price-p.stop_price,pc=v=>Math.max(0,Math.min(100,(v-p.stop_price)/sp*100));
- return `<div class="item"><div class="row"><span class="t">${esc(p.card)} · ${esc(p.grade)}</span><span class="flag ${p.sell_signal}">${p.sell_signal.replace("_"," ")}</span></div>
+ return `<div class="item ${p.focus===false?"nf":""}"><div class="row"><span class="t">${esc(p.card)} · ${esc(p.grade)}</span><span class="flag ${p.sell_signal}">${p.sell_signal.replace("_"," ")}</span></div>
  <div class="m">${p.qty} × ${usd(p.unit_cost)} = ${usd(p.total_cost)} · now ${usd(p.current_price)} · <span class="${cls(p.unrealized_pnl)}">${usd(p.unrealized_pnl)} (${p.unrealized_pct}%)</span></div>
  <div class="bar"><div class="fill" style="width:${pc(p.current_price)}%"></div><div class="tick" style="left:${pc(p.unit_cost)}%"></div></div>
  <div class="row m"><span>Stop ${usd(p.stop_price)}</span><span>Cost ${usd(p.unit_cost)}</span><span>Target ${usd(p.target_price)}</span></div>
- <div class="m">${p.id} · exit by ${p.exit_by} · ${esc(p.source)}</div></div>`}).join("")+`<div class="note">Unrealized P&L assumes selling now: 13% fees + $5/unit shipping.</div>`]);
-const lst=(a,c)=>a.map(x=>`<div class="item"><div class="row"><span class="t">${esc(x.card)}</span><span class="${c}">${esc(x.change)}</span></div><div class="row m"><span>${esc(x.source)}</span><span>${x.price!=null?usd(x.price):""}</span></div></div>`).join("");
+ <div class="m">${esc(p.sport||"")}${p.focus===false?" (non-focus)":""} · ${p.id} · exit by ${p.exit_by} · ${esc(p.source)}</div></div>`}).join("")+`<div class="note">Unrealized P&L assumes selling now: 13% fees + $5/unit shipping.</div>`]);
+const chips=`<div class="chips">${["All","MLB","NBA","NFL"].map(x=>`<button data-sp="${x}" class="${x==="All"?"on":""}">${x}</button>`).join("")}</div>`;
+const lst=(a,c)=>chips+a.map(x=>`<div class="item" data-sport="${x.sport}"><div class="row"><span class="t">${esc(x.card)}</span><span class="${c}">${esc(x.change)}</span></div><div class="row m"><span>${esc(x.sport)} · <a style="color:var(--mut)" href="${esc(x.source)}" target="_blank" rel="noopener">${esc(x.source.replace(/^https?:\/\//,"").split("/")[0])}</a></span><span>${x.price!=null?usd(x.price):""}</span></div></div>`).join("");
 if(d.trending_up_view?.length)secs.push(["Up",lst(d.trending_up_view,"pos")]);
 if(d.trending_down_view?.length)secs.push(["Down",lst(d.trending_down_view,"neg")]);
 if(d.daily_movers?.length)secs.push(["Movers",`<table><tr><th>Card</th><th>1d</th></tr>${d.daily_movers.map(m=>`<tr><td>${esc(m.card)}</td><td class="${cls(m.change_1d_pct)}">${m.change_1d_pct}%</td></tr>`).join("")}</table>`]);
@@ -50,6 +51,7 @@ if(d.signal_sources?.length)secs.push(["Signals",`<table><tr><th>Source</th><th>
 if(d.closed_trades?.length)secs.push(["Closed",`<table><tr><th>Card</th><th>Qty</th><th>Exit</th><th>P&L</th></tr>${d.closed_trades.map(c=>`<tr><td>${esc(c.card)}</td><td>${c.qty}</td><td>${usd(c.exit)}</td><td class="${cls(c.pnl)}">${usd(c.pnl)}</td></tr>`).join("")}</table>`]);
 $("#main").innerHTML=secs.map(([n,h],i)=>`<section id="s${i}" class="${i?"":"on"}"><h2>${n==="Up"?"Trending up":n==="Down"?"Trending down":n==="Movers"?"Daily movers":n==="Signals"?"Signals by source":n==="Closed"?"Closed trades":n}</h2>${h}</section>`).join("");
 $("#nav").innerHTML=secs.map(([n],i)=>`<button class="${i?"":"on"}" data-i="${i}">${n}</button>`).join("");
+$("#main").addEventListener("click",e=>{const b=e.target.closest(".chips button");if(!b)return;const sec=b.closest("section");sec.querySelectorAll(".chips button").forEach(x=>x.classList.toggle("on",x===b));sec.querySelectorAll(".item").forEach(it=>it.style.display=b.dataset.sp==="All"||it.dataset.sport===b.dataset.sp?"":"none")});
 $("#nav").onclick=e=>{const b=e.target.closest("button");if(!b)return;document.querySelectorAll("nav button,section").forEach(x=>x.classList.remove("on"));b.classList.add("on");$("#s"+b.dataset.i).classList.add("on");scrollTo(0,0)};}
 if("serviceWorker" in navigator)navigator.serviceWorker.register("sw.js");
 </script></body></html>

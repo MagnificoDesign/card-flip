@@ -1,14 +1,14 @@
 {
- "generated_at": "2026-10-23T11:05:58",
+ "generated_at": "2026-10-23T11:12:20",
  "paper_only": true,
  "summary": {
   "starting_cash": 5000,
   "cash": 260.0,
   "invested_cost": 4740.0,
-  "market_value": 4740.0,
-  "total_equity_net": 4153.8,
+  "market_value": 4777.82,
+  "total_equity_net": 4186.7,
   "realized_pnl": 0,
-  "unrealized_pnl_net": -846.2,
+  "unrealized_pnl_net": -813.3,
   "open_positions": 8,
   "closed_trades": 0,
   "win_rate_pct": null
@@ -32,6 +32,8 @@
    "source": "own_research:CardWire",
    "price_source_url": "https://cardwire.com/article/football-cards-to-buy-right-now",
    "status": "open",
+   "sport": "NFL",
+   "focus": true,
    "market_value": 700,
    "net_exit_value": 584.0,
    "unrealized_pnl": -116.0,
@@ -58,6 +60,8 @@
    "source": "own_research:CardWire",
    "price_source_url": "https://cardwire.com/wire/2026-10-19-junior-caminero-psa-10-rookie-tripled",
    "status": "open",
+   "sport": "MLB",
+   "focus": true,
    "market_value": 590,
    "net_exit_value": 488.3,
    "unrealized_pnl": -101.7,
@@ -84,6 +88,8 @@
    "source": "own_research:EloStrat",
    "price_source_url": "https://www.elostrat.com/search?historySort=date_asc",
    "status": "open",
+   "sport": "NBA",
+   "focus": true,
    "market_value": 600,
    "net_exit_value": 492.0,
    "unrealized_pnl": -108.0,
@@ -111,6 +117,8 @@
    "price_source_url": "https://cardwire.com/article/football-cards-to-buy-right-now",
    "status": "open",
    "tracker_note": "Tracker: watch/no-data, no comps page; ~$50 barely clears fees+ship",
+   "sport": "NFL",
+   "focus": true,
    "market_value": 600,
    "net_exit_value": 472.0,
    "unrealized_pnl": -128.0,
@@ -127,7 +135,7 @@
    "qty": 2,
    "unit_cost": 330,
    "total_cost": 660,
-   "current_price": 330,
+   "current_price": 315.66,
    "target_price": 400,
    "stop_price": 270,
    "opened": "2026-10-23",
@@ -143,11 +151,13 @@
     "Signal Scanner (via Tracker)"
    ],
    "tracker_comps": "PSA10 $290-$337 Oct 19-21, avg $320 (PriceCharting); Tracker buy $300 tgt $365 \u2014 our $330 cost is above avg comp",
-   "market_value": 660,
-   "net_exit_value": 564.2,
-   "unrealized_pnl": -95.8,
-   "unrealized_pct": -14.52,
-   "change_1d_pct": 0.0,
+   "sport": "NFL",
+   "focus": true,
+   "market_value": 631.32,
+   "net_exit_value": 539.25,
+   "unrealized_pnl": -120.75,
+   "unrealized_pct": -18.3,
+   "change_1d_pct": -4.35,
    "change_7d_pct": 0.0,
    "sell_signal": "hold"
   },
@@ -159,7 +169,7 @@
    "qty": 8,
    "unit_cost": 55.0,
    "total_cost": 440.0,
-   "current_price": 55.0,
+   "current_price": 60.0,
    "target_price": 75.0,
    "stop_price": 46,
    "opened": "2026-10-23",
@@ -170,11 +180,13 @@
    "price_source_url": "https://www.pricecharting.com/game/pokemon-vivid-voltage/zacian-82",
    "comps": "PSA10 solds 10/20 $60,$66.53,$77; 10/19 $46; 10/18 $76.41,$60 | https://www.pricecharting.com/game/pokemon-vivid-voltage/zacian-82",
    "status": "open",
-   "market_value": 440.0,
-   "net_exit_value": 342.8,
-   "unrealized_pnl": -97.2,
-   "unrealized_pct": -22.09,
-   "change_1d_pct": 0.0,
+   "sport": "Pokemon",
+   "focus": false,
+   "market_value": 480.0,
+   "net_exit_value": 377.6,
+   "unrealized_pnl": -62.4,
+   "unrealized_pct": -14.18,
+   "change_1d_pct": 9.09,
    "change_7d_pct": 0.0,
    "sell_signal": "hold"
   },
@@ -186,7 +198,7 @@
    "qty": 5,
    "unit_cost": 120.0,
    "total_cost": 600.0,
-   "current_price": 120.0,
+   "current_price": 126.98,
    "target_price": 150.0,
    "stop_price": 105,
    "opened": "2026-10-23",
@@ -197,11 +209,13 @@
    "price_source_url": "https://www.pricecharting.com/game/pokemon-go/radiant-blastoise-18",
    "comps": "PSA10 solds 10/20 $149.99; 10/19 $125; 10/18 $135; 10/17 $111.14,$128.50 | https://www.pricecharting.com/game/pokemon-go/radiant-blastoise-18",
    "status": "open",
-   "market_value": 600.0,
-   "net_exit_value": 497.0,
-   "unrealized_pnl": -103.0,
-   "unrealized_pct": -17.17,
-   "change_1d_pct": 0.0,
+   "sport": "Pokemon",
+   "focus": false,
+   "market_value": 634.9,
+   "net_exit_value": 527.36,
+   "unrealized_pnl": -72.64,
+   "unrealized_pct": -12.11,
+   "change_1d_pct": 5.82,
    "change_7d_pct": 0.0,
    "sell_signal": "hold"
   },
@@ -213,7 +227,7 @@
    "qty": 5,
    "unit_cost": 110.0,
    "total_cost": 550.0,
-   "current_price": 110.0,
+   "current_price": 108.32,
    "target_price": 150.0,
    "stop_price": 92,
    "opened": "2026-10-23",
@@ -224,14 +238,21 @@
    "price_source_url": "https://www.pricecharting.com/game/pokemon-evolutions/pidgeot-ex-64",
    "comps": "PSA10 solds 10/19 $96; 10/16 $150; 10/14 $279.95; 10/13 $159,$150; 10/11 $109.99 | https://www.pricecharting.com/game/pokemon-evolutions/pidgeot-ex-64",
    "status": "open",
-   "market_value": 550.0,
-   "net_exit_value": 453.5,
-   "unrealized_pnl": -96.5,
-   "unrealized_pct": -17.55,
-   "change_1d_pct": 0.0,
+   "sport": "Pokemon",
+   "focus": false,
+   "market_value": 541.5999999999999,
+   "net_exit_value": 446.19,
+   "unrealized_pnl": -103.81,
+   "unrealized_pct": -18.87,
+   "change_1d_pct": -1.53,
    "change_7d_pct": 0.0,
    "sell_signal": "hold"
   }
+ ],
+ "focus_sports": [
+  "MLB",
+  "NBA",
+  "NFL"
  ],
  "trending_up": [
   {
@@ -497,7 +518,129 @@
    "realized_return_pct": null
   }
  ],
- "daily_movers": [],
+ "daily_movers": [
+  {
+   "id": "P006",
+   "card": "Zacian #82",
+   "set": "Pokemon Vivid Voltage",
+   "grade": "PSA 10",
+   "qty": 8,
+   "unit_cost": 55.0,
+   "total_cost": 440.0,
+   "current_price": 60.0,
+   "target_price": 75.0,
+   "stop_price": 46,
+   "opened": "2026-10-23",
+   "flip_window_days": 14,
+   "exit_by": "2026-11-06",
+   "signal_id": "S012",
+   "source": "Card Portfolio Tracker",
+   "price_source_url": "https://www.pricecharting.com/game/pokemon-vivid-voltage/zacian-82",
+   "comps": "PSA10 solds 10/20 $60,$66.53,$77; 10/19 $46; 10/18 $76.41,$60 | https://www.pricecharting.com/game/pokemon-vivid-voltage/zacian-82",
+   "status": "open",
+   "sport": "Pokemon",
+   "focus": false,
+   "market_value": 480.0,
+   "net_exit_value": 377.6,
+   "unrealized_pnl": -62.4,
+   "unrealized_pct": -14.18,
+   "change_1d_pct": 9.09,
+   "change_7d_pct": 0.0,
+   "sell_signal": "hold"
+  },
+  {
+   "id": "P007",
+   "card": "Radiant Blastoise #18",
+   "set": "Pokemon Go",
+   "grade": "PSA 10",
+   "qty": 5,
+   "unit_cost": 120.0,
+   "total_cost": 600.0,
+   "current_price": 126.98,
+   "target_price": 150.0,
+   "stop_price": 105,
+   "opened": "2026-10-23",
+   "flip_window_days": 14,
+   "exit_by": "2026-11-06",
+   "signal_id": "S013",
+   "source": "Card Portfolio Tracker",
+   "price_source_url": "https://www.pricecharting.com/game/pokemon-go/radiant-blastoise-18",
+   "comps": "PSA10 solds 10/20 $149.99; 10/19 $125; 10/18 $135; 10/17 $111.14,$128.50 | https://www.pricecharting.com/game/pokemon-go/radiant-blastoise-18",
+   "status": "open",
+   "sport": "Pokemon",
+   "focus": false,
+   "market_value": 634.9,
+   "net_exit_value": 527.36,
+   "unrealized_pnl": -72.64,
+   "unrealized_pct": -12.11,
+   "change_1d_pct": 5.82,
+   "change_7d_pct": 0.0,
+   "sell_signal": "hold"
+  },
+  {
+   "id": "P005",
+   "card": "Bryce Young",
+   "set": "2023 Prizm Silver #311 RC",
+   "grade": "PSA 10",
+   "qty": 2,
+   "unit_cost": 330,
+   "total_cost": 660,
+   "current_price": 315.66,
+   "target_price": 400,
+   "stop_price": 270,
+   "opened": "2026-10-23",
+   "flip_window_days": 21,
+   "exit_by": "2026-11-13",
+   "signal_id": "S005",
+   "source": "own_research:CardWire",
+   "price_source_url": "https://cardwire.com/wire/2026-10-19-bryce-young-s-prizm-silver-rookie-is-up-by-half-since-mid-september",
+   "status": "open",
+   "corroborated_by": [
+    "own_research:CardWire",
+    "Card Portfolio Tracker",
+    "Signal Scanner (via Tracker)"
+   ],
+   "tracker_comps": "PSA10 $290-$337 Oct 19-21, avg $320 (PriceCharting); Tracker buy $300 tgt $365 \u2014 our $330 cost is above avg comp",
+   "sport": "NFL",
+   "focus": true,
+   "market_value": 631.32,
+   "net_exit_value": 539.25,
+   "unrealized_pnl": -120.75,
+   "unrealized_pct": -18.3,
+   "change_1d_pct": -4.35,
+   "change_7d_pct": 0.0,
+   "sell_signal": "hold"
+  },
+  {
+   "id": "P008",
+   "card": "Pidgeot EX #64",
+   "set": "Pokemon Evolutions",
+   "grade": "PSA 10",
+   "qty": 5,
+   "unit_cost": 110.0,
+   "total_cost": 550.0,
+   "current_price": 108.32,
+   "target_price": 150.0,
+   "stop_price": 92,
+   "opened": "2026-10-23",
+   "flip_window_days": 21,
+   "exit_by": "2026-11-13",
+   "signal_id": "S015",
+   "source": "Card Portfolio Tracker",
+   "price_source_url": "https://www.pricecharting.com/game/pokemon-evolutions/pidgeot-ex-64",
+   "comps": "PSA10 solds 10/19 $96; 10/16 $150; 10/14 $279.95; 10/13 $159,$150; 10/11 $109.99 | https://www.pricecharting.com/game/pokemon-evolutions/pidgeot-ex-64",
+   "status": "open",
+   "sport": "Pokemon",
+   "focus": false,
+   "market_value": 541.5999999999999,
+   "net_exit_value": 446.19,
+   "unrealized_pnl": -103.81,
+   "unrealized_pct": -18.87,
+   "change_1d_pct": -1.53,
+   "change_7d_pct": 0.0,
+   "sell_signal": "hold"
+  }
+ ],
  "signal_accuracy_by_source": {},
  "closed_trades": [],
  "signal_sources": [
@@ -525,30 +668,247 @@
  ],
  "trending_up_view": [
   {
-   "card": "M Ampharos EX #28 PSA 10",
-   "price": 795,
-   "change": "+247.2% 30d",
-   "source": "https://vaultedmarket.com/movers"
+   "card": "Junior Caminero 2024 Topps Chrome RC PSA 10",
+   "sport": "MLB",
+   "price": 118,
+   "change_pct": 218.9,
+   "change": "+218.9% vs Nov 2025 ($37)",
+   "source": "https://cardwire.com/wire/2026-10-19-junior-caminero-psa-10-rookie-tripled"
   },
   {
-   "card": "Silvally GX #108 PSA 10",
-   "price": 364,
-   "change": "+225.0% 30d",
-   "source": "https://vaultedmarket.com/movers"
+   "card": "Jackson Chourio 2024 Topps Chrome #161 RC PSA 10",
+   "sport": "MLB",
+   "price": 79,
+   "change_pct": 97.5,
+   "change": "+97.5% NLCS vs ~$40 summer",
+   "source": "https://cardwire.com/wire/2026-10-16-brewers-world-series-misiorowski-chourio-rookies"
   },
   {
-   "card": "Glaceon V #SWSH196 PSA 10",
-   "price": 372,
-   "change": "+220.7% 30d",
-   "source": "https://vaultedmarket.com/movers"
+   "card": "Bryce Young 2023 Panini Prizm Silver #311 PSA 10",
+   "sport": "NFL",
+   "price": 319,
+   "change_pct": 79.5,
+   "change": "+79.5% 30d",
+   "source": "https://cardwire.com/movers"
+  },
+  {
+   "card": "Tyrese Maxey 2020 Panini Prizm #256 RC PSA 10",
+   "sport": "NBA",
+   "price": 115,
+   "change_pct": 76.9,
+   "change": "+76.9% ~$65 pre-Jul 24 to ~$115",
+   "source": "https://cardwire.com/wire/2026-10-19-lebron-rookie-card-cooled-off-before-sixers-debut"
+  },
+  {
+   "card": "Brock Purdy 2022 Panini Prizm PSA 10",
+   "sport": "NFL",
+   "price": 130,
+   "change_pct": 51.2,
+   "change": "+51.2% 30d",
+   "source": "https://cardwire.com/movers"
+  },
+  {
+   "card": "Brock Purdy 2022 Chronicles Prizm Black PSA 10",
+   "sport": "NFL",
+   "price": 120,
+   "change_pct": 49.9,
+   "change": "+49.9% 30d",
+   "source": "https://cardwire.com/movers"
+  },
+  {
+   "card": "Justin Verlander 2006 Topps #641 PSA 10",
+   "sport": "MLB",
+   "price": 136,
+   "change_pct": 48.9,
+   "change": "+48.9% 30d",
+   "source": "https://cardwire.com/movers"
+  },
+  {
+   "card": "Barry Bonds 1987 Topps PSA 10",
+   "sport": "MLB",
+   "price": 1562,
+   "change_pct": 48.8,
+   "change": "+48.8% 30d",
+   "source": "https://cardwire.com/movers"
+  },
+  {
+   "card": "Christian Yelich 2013 Topps Update RC PSA 10",
+   "sport": "MLB",
+   "price": 29,
+   "change_pct": 45.0,
+   "change": "+45.0% Oct 15-21 vs Sep 1-Oct 3 (~$20)",
+   "source": "https://cardwire.com/article/brewers-world-series-cards-chourio-misiorowski-yount"
+  },
+  {
+   "card": "Mark McGwire 1987 Topps PSA 10",
+   "sport": "MLB",
+   "price": 264,
+   "change_pct": 43.6,
+   "change": "+43.6% 30d",
+   "source": "https://cardwire.com/movers"
+  },
+  {
+   "card": "C.J. Stroud 2023 Panini Prizm #339 PSA 10",
+   "sport": "NFL",
+   "price": 31,
+   "change_pct": 29.2,
+   "change": "+29.2% 7d",
+   "source": "https://cardwire.com/movers"
+  },
+  {
+   "card": "Brock Purdy 2022 Panini Chronicles PSA 10",
+   "sport": "NFL",
+   "price": 48,
+   "change_pct": 20.3,
+   "change": "+20.3% 7d",
+   "source": "https://cardwire.com/movers"
+  },
+  {
+   "card": "Mark McGwire 1987 Donruss Rated Rookie PSA 10",
+   "sport": "MLB",
+   "price": 282,
+   "change_pct": 14.3,
+   "change": "+14.3% 7d",
+   "source": "https://cardwire.com/movers"
+  },
+  {
+   "card": "Michael Jordan 1991 Upper Deck PSA 10",
+   "sport": "NBA",
+   "price": 1290,
+   "change_pct": 13.9,
+   "change": "+13.9% 7d",
+   "source": "https://cardwire.com/movers"
+  },
+  {
+   "card": "Dylan Harper 2025 Topps Chrome RC PSA 10",
+   "sport": "NBA",
+   "price": 348,
+   "change_pct": 10.2,
+   "change": "+10.2% 30d",
+   "source": "https://cardwire.com/movers"
   }
  ],
  "trending_down_view": [
   {
-   "card": "Lamine Yamal PSA 10",
-   "price": 182.5,
-   "change": "-23.5% 90d",
-   "source": "https://cardladder.com/ladder/card/qkE3GJ4GZKU9C0pOjAfj"
+   "card": "Elian Rosario 2026 Bowman Chrome Intl Refractor Auto Raw",
+   "sport": "MLB",
+   "price": 14,
+   "change_pct": -62.8,
+   "change": "-62.8% 30d",
+   "source": "https://cardwire.com/movers"
+  },
+  {
+   "card": "Owen Ayers 2026 Bowman Chrome Prospect Auto Raw",
+   "sport": "MLB",
+   "price": 17,
+   "change_pct": -53.6,
+   "change": "-53.6% 30d",
+   "source": "https://cardwire.com/movers"
+  },
+  {
+   "card": "Juan Torres 2026 Bowman Chrome Prospect Auto Raw",
+   "sport": "MLB",
+   "price": 17,
+   "change_pct": -47.2,
+   "change": "-47.2% 30d",
+   "source": "https://cardwire.com/movers"
+  },
+  {
+   "card": "Shohei Ohtani 2018 Bowman Chrome #1 RC PSA 10",
+   "sport": "MLB",
+   "price": 4750,
+   "change_pct": -36.7,
+   "change": "-36.7% early Aug ($7,505) to Oct",
+   "source": "https://cardwire.com/article/shohei-ohtani-rookie-card-prices"
+  },
+  {
+   "card": "Jaxson Dart 2025 Panini Prizm #332 PSA 10",
+   "sport": "NFL",
+   "price": 88,
+   "change_pct": -28.2,
+   "change": "-28.2% 30d",
+   "source": "https://cardwire.com/movers"
+  },
+  {
+   "card": "Shohei Ohtani 2026 Topps PSA 10",
+   "sport": "MLB",
+   "price": 71,
+   "change_pct": -26.3,
+   "change": "-26.3% 30d",
+   "source": "https://cardwire.com/movers"
+  },
+  {
+   "card": "Deshaun Watson 2017 Panini Prizm Silver #279 PSA 10",
+   "sport": "NFL",
+   "price": 73,
+   "change_pct": -25.2,
+   "change": "-25.2% 7d",
+   "source": "https://cardwire.com/movers"
+  },
+  {
+   "card": "Michael Jordan 1991 Fleer #29 PSA 10",
+   "sport": "NBA",
+   "price": 889,
+   "change_pct": -25.1,
+   "change": "-25.1% 30d",
+   "source": "https://cardwire.com/movers"
+  },
+  {
+   "card": "Michael Jordan 1992 Topps Archives PSA 10",
+   "sport": "NBA",
+   "price": 1440,
+   "change_pct": -25.0,
+   "change": "-25.0% 30d",
+   "source": "https://cardwire.com/movers"
+  },
+  {
+   "card": "Michael Jordan 1991 Upper Deck All-Star Checklist PSA 10",
+   "sport": "NBA",
+   "price": 151,
+   "change_pct": -24.4,
+   "change": "-24.4% 30d",
+   "source": "https://cardwire.com/movers"
+  },
+  {
+   "card": "Jayden Daniels 2024 Panini Prizm PSA 10",
+   "sport": "NFL",
+   "price": 51,
+   "change_pct": -24.4,
+   "change": "-24.4% 30d",
+   "source": "https://cardwire.com/movers"
+  },
+  {
+   "card": "Shohei Ohtani 2018 Topps Chrome Pitching #150 PSA 10",
+   "sport": "MLB",
+   "price": 1218,
+   "change_pct": -24.2,
+   "change": "-24.2% 30d",
+   "source": "https://cardwire.com/movers"
+  },
+  {
+   "card": "Larry Bird / Michael Jordan 1992 Upper Deck Fanimation PSA 10",
+   "sport": "NBA",
+   "price": 773,
+   "change_pct": -22.7,
+   "change": "-22.7% 30d",
+   "source": "https://cardwire.com/movers"
+  },
+  {
+   "card": "Bo Nix 2024 Panini Prizm Silver PSA 10",
+   "sport": "NFL",
+   "price": 599,
+   "change_pct": -21.6,
+   "change": "-21.6% 30d",
+   "source": "https://cardwire.com/movers"
+  },
+  {
+   "card": "Cooper Flagg 2025 Topps Pristine Refractor Raw",
+   "sport": "NBA",
+   "price": 83,
+   "change_pct": -20.6,
+   "change": "-20.6% 7d",
+   "source": "https://cardwire.com/movers"
   }
- ]
+ ],
+ "trends_as_of": "2026-10-23"
 }
