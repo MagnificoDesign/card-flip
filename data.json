@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T11:12:20",
+ "generated_at": "2026-10-23T11:22:03",
  "paper_only": true,
  "summary": {
   "starting_cash": 5000,
@@ -642,6 +642,15 @@
   }
  ],
  "signal_accuracy_by_source": {},
+ "equity_history": [
+  {
+   "date": "2026-10-23",
+   "liquidation_equity": 4186.7,
+   "market_value": 4777.82,
+   "cash": 260.0,
+   "gross_equity": 5037.82
+  }
+ ],
  "closed_trades": [],
  "signal_sources": [
   {
@@ -910,5 +919,53 @@
    "source": "https://cardwire.com/movers"
   }
  ],
- "trends_as_of": "2026-10-23"
+ "trends_as_of": "2026-10-23",
+ "report_card": [
+  {
+   "source": "Card Portfolio Tracker",
+   "buys": 4,
+   "positions": [
+    "P005",
+    "P006",
+    "P007",
+    "P008"
+   ],
+   "wins": 0,
+   "losses": 0,
+   "win_rate_pct": null,
+   "avg_closed_return_pct": null,
+   "avg_open_gross_pct": 2.26,
+   "rank": 1
+  },
+  {
+   "source": "Own research",
+   "buys": 5,
+   "positions": [
+    "P001",
+    "P002",
+    "P003",
+    "P004",
+    "P005"
+   ],
+   "wins": 0,
+   "losses": 0,
+   "win_rate_pct": null,
+   "avg_closed_return_pct": null,
+   "avg_open_gross_pct": -0.87,
+   "rank": 2
+  },
+  {
+   "source": "Card Signal Scanner",
+   "buys": 1,
+   "positions": [
+    "P005"
+   ],
+   "wins": 0,
+   "losses": 0,
+   "win_rate_pct": null,
+   "avg_closed_return_pct": null,
+   "avg_open_gross_pct": -4.35,
+   "rank": 3
+  }
+ ]
 }
